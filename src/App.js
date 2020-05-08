@@ -8,7 +8,7 @@ const App = () => {
     { id: 3, name: 'Ben', username: 'benisphere' },
   ]
 
-  
+  const [users, setUsers] = useState(usersData);
 
   return (
     <div className="container">
