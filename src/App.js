@@ -32,6 +32,12 @@ const App = () => {
     setCurrentUser({ id: user.id, name: user.name, username: user.username })
   }
 
+  const updateUser = (id, updatedUser) => {
+    setEditing(false)
+
+    setUsers(users.map(user => (user.id === id ? updatedUser : user)))
+  }
+  
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
