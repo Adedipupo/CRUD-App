@@ -20,6 +20,8 @@ const App = () => {
     setUsers(users.filter(user => user.id !== id))
   }
 
+  const [editing, setEditing] = useState(false)
+
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
