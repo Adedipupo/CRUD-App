@@ -26,6 +26,12 @@ const App = () => {
 
   const [currentUser, setCurrentUser] = useState(initialFormState)
 
+  const editRow = user => {
+    setEditing(true)
+
+    setCurrentUser({ id: user.id, name: user.name, username: user.username })
+  }
+
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
@@ -36,7 +42,7 @@ const App = () => {
         </div>
         <div className="flex-large">
           <h2>View users</h2>
-          <UserTable users={users} deleteUser={deleteUser}  />
+          <UserTable users={users} editRow={editRow} deleteUser={deleteUser}  />
         </div>
       </div>
     </div>
