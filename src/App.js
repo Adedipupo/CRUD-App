@@ -10,7 +10,7 @@ const App = () => {
 
   const [users, setUsers] = useState(usersData);
 
-  const AddUser = user => {
+  const addUser = user => {
     user.id = users.length +1
     setUsers([...users, user]);
    }
