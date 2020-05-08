@@ -2,6 +2,14 @@ import React from 'react';
 import UserTable from './tables/UserTable';
 
 const App = () => {
+  const usersData = [
+    { id: 1, name: 'Tania', username: 'floppydiskette' },
+    { id: 2, name: 'Craig', username: 'siliconeidolon' },
+    { id: 3, name: 'Ben', username: 'benisphere' },
+  ]
+
+  
+
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
