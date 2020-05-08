@@ -1,7 +1,7 @@
 import React from 'react';
 import UserTable from './tables/UserTable';
 
-function App() {
+const App = () => {
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
