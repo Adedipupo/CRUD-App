@@ -21,8 +21,10 @@ const App = () => {
   }
 
   const [editing, setEditing] = useState(false)
-  
+
   const initialFormState = { id: null, name: '', username: '' }
+
+  const [currentUser, setCurrentUser] = useState(initialFormState)
 
   return (
     <div className="container">
