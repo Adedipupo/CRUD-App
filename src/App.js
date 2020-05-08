@@ -10,6 +10,10 @@ const App = () => {
 
   const [users, setUsers] = useState(usersData);
 
+  const AddUser = user => {
+    user.id = users.length +1
+   }
+
   return (
     <div className="container">
       <h1>CRUD App with Hooks</h1>
