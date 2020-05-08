@@ -1,7 +1,9 @@
 import React from "react";
 
-const UserTable = () => {
-  return <div></div>;
-};
+const UserTable = () => (
+    <table>
+        
+    </table>
+);
 
 export default UserTable;
